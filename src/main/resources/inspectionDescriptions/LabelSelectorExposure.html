@@ -1,0 +1,10 @@
+<html>
+<body>
+Reports a Deployment, Pod, StatefulSet or DaemonSet that a Service exposes but that no NetworkPolicy with
+ingress rules selects, in a project that does define NetworkPolicies.
+<!-- tooltip end -->
+<p>The namespace looks protected, but this workload falls outside every policy and accepts any ingress traffic.
+Selectors are resolved across all YAML manifests of the project with Kubernetes semantics: <code>matchLabels</code> and
+<code>matchExpressions</code> with <code>In</code>, <code>NotIn</code> and <code>Exists</code>.</p>
+</body>
+</html>
